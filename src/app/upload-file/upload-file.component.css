@@ -1,0 +1,61 @@
+@import url('https://css.gg/software-upload.css');
+.upload-file {
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    flex-flow: column;
+    display: flex;
+    width: 15rem;
+}
+
+.is-upload-success {
+  text-align: center;
+  color: red;
+}
+
+.title {
+    border-color: black;
+    text-align: center;
+    height: 25px;
+}
+
+.file-input-label {
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .file-input-label i {
+    color: blue;
+  }
+
+  .file-input-label p {
+    margin: 0;
+  }
+
+  .file-input-label span {
+    white-space: nowrap;
+  }
+  
+  .file-input {
+    display: none;
+  }
+
+  .submit {
+    margin-top: 15px;
+    cursor: pointer;
+    border-style: groove;
+    background-color: #fff;
+    width: 7rem;
+    height: 2rem;
+    font-weight: bold;
+    font-size: 17px;
+    align-self: center;
+  }
+  

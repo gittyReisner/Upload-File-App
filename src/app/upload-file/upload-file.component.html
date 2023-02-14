@@ -1,0 +1,14 @@
+<div class="upload-file">
+    <div class="card">
+        <p class="is-upload-success">{{ isUploadSuccess }}</p>
+        <input (change)="enterTitle($event.target['value'])" class="title" placeholder="הכנס כותרת"/>
+        <label for="file-input" class="file-input-label">
+            <i class="gg-software-upload"></i>
+            <p *ngIf="selectedFileName">{{ selectedFileName }}</p>
+            <span>העלה קובץ</span>
+        </label>
+        <input id="file-input" type="file" accept=".doc,.pdf,.docx" 
+        (change)="handleFileInput($event.target['files'])" class="file-input">
+        <button class="submit" (click)="uploadFileToActivity()">שלח</button>  
+    </div>
+</div>

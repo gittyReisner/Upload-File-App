@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="card">
+      <button [matMenuTriggerFor]="appMenu" class="red-circle">
+          <div class="files-upload-count">{{ numFiles$ | async }}</div>
+      </button>
+  </div>
+</div>
+
+<mat-menu #appMenu="matMenu" xPosition="before" class="context-menu">
+  <div class="menu-files" *ngFor="let file of files$ | async">
+    <a [href]="environment.apiURL + '/file/' + file.name">
+      <i class="gg-software-download"></i>
+    </a>
+    <span>{{ file.name }} </span>
+  </div>
+</mat-menu>
